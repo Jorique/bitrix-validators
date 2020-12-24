@@ -19,6 +19,6 @@
         "module_name": "jorique.validators"
     },
     "require": {
-        "composer/installers": ">=1.0.22 <2.0"
+        "jorique/bitrix-installer": "*"
     }
 }
