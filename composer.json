@@ -2,7 +2,7 @@
     "name": "jorique/bitrix-validators",
     "description": "Валидаторы для битрикса как в Yii2",
     "keywords": ["bitrix", "Битрикс", "d7", "модуль"],
-    "type": "bitrix-d7-module",
+    "type": "bitrix-module",
     "license": "MIT",
     "support": {
         "www": "https://www.100up.ru",
