@@ -16,7 +16,7 @@
         }
     ],
     "extra": {
-        "installer-name": "jorique.validators"
+        "module_name": "jorique.validators"
     },
     "require": {
         "composer/installers": ">=1.0.22 <2.0"
