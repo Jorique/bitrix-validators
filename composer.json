@@ -1,0 +1,24 @@
+{
+    "name": "jorique/bitrix-validators",
+    "description": "Валидаторы для битрикса как в Yii2",
+    "keywords": ["bitrix", "Битрикс", "d7", "модуль"],
+    "type": "bitrix-d7-module",
+    "license": "MIT",
+    "support": {
+        "www": "https://www.100up.ru",
+        "skype": "alexander_jorique",
+        "source": "https://github.com/Jorique/bitrix-validators"
+    },
+    "authors": [
+        {
+            "name": "Alexander Zhuravlev",
+            "email": "alex@100up.ru"
+        }
+    ],
+    "extra": {
+        "installer-name": "jorique.validators"
+    },
+    "require": {
+        "composer/installers": ">=1.0.22 <2.0"
+    }
+}
