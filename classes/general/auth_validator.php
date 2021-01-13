@@ -30,17 +30,10 @@ class AuthValidator extends Validator {
 			return;
 		}
 
-		$salt = "";
-		$dbPassword = $user["PASSWORD"];
-
-		if(strlen($user["PASSWORD"]) > 32) {
-			$salt = substr($user["PASSWORD"], 0, strlen($user["PASSWORD"]) - 32);
-			$dbPassword = substr($user["PASSWORD"], -32);
-		}
-		if(md5($salt.$this->password) != $dbPassword) {
-			$this->_model->addError($this->_attr, $this->message, $counter);
-			return;
-		}
+        if(!\Bitrix\Main\Security\Password::equals($user["PASSWORD"], $this->password)) {
+            $this->_model->addError($this->_attr, $this->message, $counter);
+            return;
+        }
 		if($user['ACTIVE'] != 'Y') {
 			$this->_model->addError($this->_attr, $this->inactiveMessage, $counter);
 		}
